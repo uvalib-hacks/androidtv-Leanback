@@ -164,17 +164,19 @@ public class VideoProvider {
 
     private static String getVideoPrefix(String category, String videoUrl) {
         String ret = "";
-        ret = mPrefixUrl + category.replace(" ", "%20") + '/' +
-                videoUrl.replace(" ", "%20");
+//        ret = mPrefixUrl + category.replace(" ", "%20") + '/' +
+//                videoUrl.replace(" ", "%20");
+        ret = mPrefixUrl + "Google+/Google+_%20Instant%20Upload.mp4";
         return ret;
     }
 
     private static String getThumbPrefix(String category, String title, String imageUrl) {
         String ret = "";
 
-        ret = mPrefixUrl + category.replace(" ", "%20") + '/' +
-                title.replace(" ", "%20") + '/' +
-                imageUrl.replace(" ", "%20");
+//        ret = mPrefixUrl + category.replace(" ", "%20") + '/' +
+//                title.replace(" ", "%20") + '/' +
+//                imageUrl.replace(" ", "%20");
+        ret = imageUrl.replace(" ", "%20");
         return ret;
     }
 }
